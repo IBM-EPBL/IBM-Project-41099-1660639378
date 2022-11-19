@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./static/css/login.css">
+
+</head>
+<body>
+<div id="login-form-wrap">
+  <p>{{pred}}</p>
+  <h2>Login</h2>
+  <form id="login-form" method="POST" action="{{url_for('afterlogin')}}">
+    <p>
+        <input type="email" id="email" name="_id" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+        <input type="password" name="psw" id="password" placeholder="Password" required=""><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p><a href="{{url_for('register')}}">Create Account</a><p>
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+  
+</body>
+</html>
