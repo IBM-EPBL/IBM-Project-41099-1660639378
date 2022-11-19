@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./static/css/Register.css">
+
+</head>
+<body>
+</div>
+<ul class="nav navbar-nav2">
+<li><a href="{{url_for('login')}}">Login</a></li>
+</ul>
+</div>
+
+<div id="login-form-wrap">
+  <p>{{pred}}</p>
+  <h2>Register</h2>
+  <form id="login-form" method="POST" action="{{url_for('afterreg')}}">
+    <p>
+        <input type="text" id="text" name="name" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+        <input type="email" id="email" name="_id" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+        <input type="password" name="psw" id="password" placeholder="Password" required=""><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <JavaBlink><input type="submit" id="login" value="Register"></JavaBlink>
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <!-- <p>Not a member? <a href="#">Create Account</a><p> -->
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+  
+</body>
+</html>
